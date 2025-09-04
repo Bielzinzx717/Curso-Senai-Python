@@ -1,0 +1,6 @@
+print("Olá, mundo!")
+
+a = 10
+b= 20
+soma = a + b 
+print(soma)
