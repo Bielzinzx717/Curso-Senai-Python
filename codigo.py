@@ -1,6 +1,18 @@
-numeros = [1,2,3,4,5]
-print(6 in numeros)
+nome = input("digite seu nome:  ")
+idade = int(input("digite sua idade:  "))
 
 
-numeros = [12,15,17,23,27]
-print(17 in numeros)
+Idade_daqui_100 = print (100 - idade)
+
+
+if idade >= 18:  print("vc é maioridade")
+else: print("vc é menor de idade")
+
+
+if 13 <= idade <=19: print("vc é adolescente")
+
+idade += 5 
+print (f"sua idade daqui 5 anos sera de: {idade}")
+
+ 
+print("vc tem a letra N no nome", 'n' in nome)
