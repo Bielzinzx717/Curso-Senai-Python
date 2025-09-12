@@ -150,3 +150,76 @@ print (f"sua idade daqui 5 anos sera de: {idade}")
 
  
 print("vc tem a letra N no nome", 'n' in nome)
+
+
+
+if x > 0:   print("numero positivo")
+idade = 17
+if idade >= 18:
+   print("vc é maior de idade")
+#else: 
+   print("vc é menor de idade")
+
+
+####################################
+
+nota = 50
+if nota >= 75:
+    print("excelente")
+elif nota >=50:
+    print("na trinca")
+else:
+    print("reprovado")
+
+
+
+contador = 1
+while  contador <=5:
+    print("numero1", contador)
+    contador += 1
+
+
+
+
+
+for i in range(1, 6):
+    print("nuemro:", i)
+
+
+
+
+
+for i in range(1, 10):
+    if i == 3:
+        continue  #pula o numero 3
+    if i == 5:
+        break     # para o loop no 5
+    print(i)
+
+
+
+    usuario = 23
+if usuario >=1:
+    print("maior que zero")
+elif usuario ==0:
+    print("zero")
+else:
+    print("menor que zero")
+
+
+nota = 100
+if nota >=90:
+    print("excelente")
+elif nota >=60:
+    print("aprovado")
+else:
+    print("reprovado")
+
+
+idade = 15
+if idade <=13:
+    print("criança")
+elif idade <=17:
+    print("adolescente")
+else:
+    print("adulto")

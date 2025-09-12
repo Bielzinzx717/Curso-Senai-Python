@@ -1,18 +1,26 @@
-nome = input("digite seu nome:  ")
-idade = int(input("digite sua idade:  "))
+usuario = 23
+if usuario >=1:
+    print("maior que zero")
+elif usuario ==0:
+    print("zero")
+else:
+    print("menor que zero")
 
 
-Idade_daqui_100 = print (100 - idade)
+nota = 100
+if nota >=90:
+    print("excelente")
+elif nota >=60:
+    print("aprovado")
+else:
+    print("reprovado")
 
 
-if idade >= 18:  print("vc é maioridade")
-else: print("vc é menor de idade")
-
-
-if 13 <= idade <=19: print("vc é adolescente")
-
-idade += 5 
-print (f"sua idade daqui 5 anos sera de: {idade}")
-
- 
-print("vc tem a letra N no nome", 'n' in nome)
+idade = 15
+if idade <=13:
+    print("criança")
+elif idade <=17:
+    print("adolescente")
+else:
+    print("adulto")
+    
