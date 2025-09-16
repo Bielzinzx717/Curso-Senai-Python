@@ -1,26 +1,11 @@
-usuario = 23
-if usuario >=1:
-    print("maior que zero")
-elif usuario ==0:
-    print("zero")
-else:
-    print("menor que zero")
+lista_compras = []
+for lista in range(1, 10):
+    user = str(input("adicione oq vc quer na lista:"))
+    if user == ("sair"):
+        break
 
 
-nota = 100
-if nota >=90:
-    print("excelente")
-elif nota >=60:
-    print("aprovado")
-else:
-    print("reprovado")
+lista_compras = [user]
+response = lista_compras 
 
-
-idade = 15
-if idade <=13:
-    print("criança")
-elif idade <=17:
-    print("adolescente")
-else:
-    print("adulto")
-    
+print(response)

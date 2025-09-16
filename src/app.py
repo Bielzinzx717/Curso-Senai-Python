@@ -212,7 +212,7 @@ if nota >=90:
     print("excelente")
 elif nota >=60:
     print("aprovado")
-else:
+else: 
     print("reprovado")
 
 
@@ -223,3 +223,98 @@ elif idade <=17:
     print("adolescente")
 else:
     print("adulto")
+
+
+
+
+    contador = 1
+#while  contador <=10:
+   # print("numero1", contador)
+    #contador += 1
+
+###################################################
+
+for i in range(2, 21):
+    #if i % 2 == 0:
+        #print(i)
+
+############################################################
+
+n1 = int(input("coloque seu nomero:"))
+n2 = int(input("coloque o numero do seu filho:"))
+n3 = int(input("coloque o numero da mae:"))
+ n4 = int(input("coloque o numero do pai:"))
+ n5 = int(input("coloque o numero do avô:"))
+ soma = n1 + n2 + n3 + n4 +n5
+ print("a soma das idades sao:", soma)
+
+############################################################################################
+
+ for i in range (1, 11):
+     i = i * 7
+     print(i)
+
+###############################################################################
+
+ soma = 0
+ for i in range(1, 10):
+     n1 = int(input("digite um numero:"))
+     if n1 == 0:
+      break
+     else:
+       soma = soma + n1
+ print(soma)
+
+################################################
+
+ contador = 10
+ while  contador <=50:
+     print("numero1", contador)
+     contador -= 1
+
+
+
+#########################################
+
+
+ ex: L = [20, 'jessa', 35.75, [30, 60, 90]]
+ print(L)
+
+
+ frutas = ['maça',   'banana', 'laranja']
+ numeros = list(range(5))
+ print(frutas)
+
+ frutas = ["maça", "banana", "laranja"]
+ for fruta in frutas:
+     print(fruta)
+
+
+ frutas.append("melao")
+
+ print(frutas)
+
+ lista = [1, 2]
+
+ lista.extend([2, 3, 4 ,5])
+ lista.remove(2)
+
+ print(lista)
+
+ lista.count(x) #quantas vez aparece na lista
+
+
+ lista.sort(x)  #coloca a lista em ordem
+
+
+
+
+ lista = [3, 1, 5]
+ nova = sorted(lista)
+ print(nova)
+
+
+
+ lista.sort(reverse=True)
+
+###########################################
