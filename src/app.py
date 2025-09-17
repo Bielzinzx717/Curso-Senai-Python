@@ -340,3 +340,22 @@
 # print("sua lista de compras:") #mostrar na tela a lista_compras do user.
 # for i, produto in enumerate(lista_compras, start=1): # para listar numerando o produto da (lista_compras(1, 2 , 3 , 4 ,5...) mas posso colocar "start=(algum numero) para que ele comece a contagem apartir de qual numero eu quiser").
 #     print(f"{i}. {produto}") #mostrar o indice(numero(1, 2, 3, 4, 5,...)) . mostrar o produto enumerate"enumerado" que o user escreveu anteriormente.
+
+
+#########################################
+
+EU fazendo em casa:
+
+# frase = input("Digite uma frase: ") #pedimos ao user para ele escrever uma frase
+# palavras = frase.split() #vai "quebrar" onde houver espaços
+# unicas = [] criei uma variavel para onde vai as palavras inesxistentes
+
+# for palavra in palavras: #vai percorrer cada palavra da lista palavras
+#     if palavra not in unicas: #verifica se a palavra ainda não existe dentro da lista unicas, isso impede que palavras repetidas sejam adicionadas
+#         unicas.append(palavra)  #se for uma palavra nova, adiciona na lista unicas
+
+# print(unicas) #mostra a lista de palavras sem repetição.
+
+
+
+######################################################
