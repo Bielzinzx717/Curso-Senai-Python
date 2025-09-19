@@ -20,7 +20,7 @@ class ContaBancaria:
 
 Conta = ContaBancaria("gabriel")
 
-Conta.depositar(500)
-Conta.sacar(200)
-Conta.sacar(400)
+Conta.depositar (float(input("quanto deseja depositar? R$")))
+Conta.sacar (float(input("quanto deseja sacar? R$")))
+Conta.sacar (float(input("quanto deseja sacar? R$")))
 Conta.mostrar_saldo()
