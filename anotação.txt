@@ -521,6 +521,45 @@
 # print(novo_imc(imc))
 
 
+
+
+
+
+                             corrigido em casa
+
+
+
+ 
+def main():
+    peso = float(input("digite seu peso:"))
+    altura = float(input("digite sua altura:"))
+    return peso, altura
+
+def calcular_imc(main):
+    peso, altura = main()
+    imc = peso / (altura ** 2)
+    return imc
+
+imc = calcular_imc(main)
+
+print(f"seu IMC é: {imc:.2f}")
+
+def novo_imc(imc):
+    if imc <= 18.5:
+        return("abaixo do peso")
+    elif imc <= 24.9:
+        return("peso normal")
+    elif imc <= 29.9:
+        return("sobrepeso")
+    elif imc <= 39.9:
+        return("obesidade")
+    else:
+        return("obesidade grave")
+    
+
+print(novo_imc(imc))
+
+
 ##################################################################
 
 
