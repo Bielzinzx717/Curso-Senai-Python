@@ -1,66 +1,26 @@
-# numeros = [1, 2, 2, 3, 4, 4,5, 1]
-# unicos = []
+class conta_bancaria:
+    def __init__(self, titular):
+        self.titular = titular
+        self.saldo = 0
+    
+    def depositar(self, valor):
+        self.saldo += valor
+        print("deposito de R$ {valor:.2f} realizado. saldo atual: R${self.saldo:.2f}")
+    
+    def sacar(self, valor):
+        if valor <= self.saldo:
+            self.saldo -+ valor
+            print (f"saque de R${valor:.2f} realizado! saldo atual: R$ {self.saldo:.2f}")
+        else:
+            print("saldo insuficiente")
 
-# for i in numeros:
-#     if i not in unicos:
-#         unicos.append(i)
-
-
-# print(unicos)
-
-
-# numeros = [1, 2, 2, 3, 4, 4,5, 1]
-# unicos = list(set(numeros))
-# print(unicos)
-
-#######################################################################
-
-
-# lista1 = ["mirella", "gabriel", "chico"]
-# lista2 = ["mada", "clau", "chico"]
-
-# repets = set(lista1)
-# repets2 = set(lista2)
-
-# interseçao = repets & repets2
-
-# interseçao2 = list(interseçao)
-
-# print(f"esse é o nome repetido: {interseçao2}")
-
-
-###########################################################
-
-
-# lista1 = ["mirella", "gabriel", "chico"]
-# lista2 = ["mada", "clau", "chico"]
-
-# conjunto1 = set(lista1)
-# conjunto2 = set(lista2)
+    def mostrar_saldo(self):
+        print(f"saldo final de {self.titular}: R${self.saldo:.2f}")
 
 
 
-# diferença = conjunto1 - conjunto2
-# print("diferença", diferença)
-
-
-
-
-############################################################
-
-
-frase = input("digite uma frase:")
-
-palavras = frase.split()
-
-unicas = []
-
-for palavra in palavras:
-    if palavra not in unicas:
-        unicas.append(palavras)
-print("palavras unicas:")
-
-for palavra in unicas:
-            print(palavra)
-
-
+conta = conta_bancaria("gabriel")
+conta.depositar(500)
+conta.sacar(200)
+conta.sacar(400)
+conta.mostrar_saldo()

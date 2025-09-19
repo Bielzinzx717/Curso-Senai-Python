@@ -340,3 +340,213 @@
 # print("sua lista de compras:") #mostrar na tela a lista_compras do user.
 # for i, produto in enumerate(lista_compras, start=1): # para listar numerando o produto da (lista_compras(1, 2 , 3 , 4 ,5...) mas posso colocar "start=(algum numero) para que ele comece a contagem apartir de qual numero eu quiser").
 #     print(f"{i}. {produto}") #mostrar o indice(numero(1, 2, 3, 4, 5,...)) . mostrar o produto enumerate"enumerado" que o user escreveu anteriormente.
+
+
+
+
+
+# numeros = [1, 2, 2, 3, 4, 4,5, 1]
+# unicos = []
+
+# for i in numeros:
+#     if i not in unicos:
+#         unicos.append(i)
+
+
+# print(unicos)
+
+
+# numeros = [1, 2, 2, 3, 4, 4,5, 1]
+# unicos = list(set(numeros))
+# print(unicos)
+
+#######################################################################
+
+
+# lista1 = ["mirella", "gabriel", "chico"]
+# lista2 = ["mada", "clau", "chico"]
+
+# repets = set(lista1)
+# repets2 = set(lista2)
+
+# interseçao = repets & repets2
+
+# interseçao2 = list(interseçao)
+
+# print(f"esse é o nome repetido: {interseçao2}")
+
+
+###########################################################
+
+
+# lista1 = ["mirella", "gabriel", "chico"]
+# lista2 = ["mada", "clau", "chico"]
+
+# conjunto1 = set(lista1)
+# conjunto2 = set(lista2)
+
+
+
+# diferença = conjunto1 - conjunto2
+# print("diferença", diferença)
+
+
+
+
+############################################################
+
+
+# frase = input("digite uma frase:")
+
+# palavras = frase.split()
+
+# unicas = []
+
+# for palavra in palavras:
+#     if palavra not in unicas:
+#         unicas.append(palavras)
+# print("palavras unicas:")
+
+# for palavra in unicas:
+#             print(palavra)
+
+
+
+
+
+
+
+###############################################################################
+
+
+
+# exercicio 1                                          Tema: Dicionários
+
+# pessoa = {
+#     "nome": "Giovani",
+#     "idade": 17,
+#     "cidade": "Mogi Guaçu"
+# }
+
+# pessoa["idade"] = 18
+
+# print(pessoa)
+
+
+######################################################
+
+# Exercício 2 - Somar os valores do dicionario 
+
+# precos = {
+#     "banana": 3.50,
+#     "maça": 2.80,
+#     "uva": 4.00
+# }
+
+# soma = sum(precos.values()) # o metodo sum() faz a soma, o metodo .values() pega o valor do dicionario
+
+# print(f"A soma dos valores é de: {soma: .2f}") # o .2f usa 2 casas dps da virgula
+
+############################################################################################################################
+
+# Exercício 3 - 
+
+# frase = " O rato roeu a roupa do rei de Roma e a Rainha de raiva roeu o resto"
+# print(frase)
+# minuscula = frase.lower()
+# palavras = minuscula.split() # o .split() ele separa a string em varias partes por palavra
+
+# print(palavras)
+# contador = {} # criei um contador vazio
+
+# for palavra in palavras:         # para cada palavra dentro da lista de palavras, ele faz algo
+#     if palavra in contador:      # se palavra tiver dentro do contador ;
+#         contador[palavra] += 1   #  aumenta + 1
+#     else:                        # se a palavra não esta no contador ;
+#         contador[palavra] = 1    # Cria a chave com o valor 1
+
+# print(contador)
+
+########################################################################################################################
+# Exercício 4
+
+# agenda = {
+#     "Giovani":["19-999295741" , "19-999295742"],
+#     "Simone": ["19-997873739" , "19-997873749"]
+# }
+
+# print(f"Os números dos contatos são: {agenda}")
+
+# for nome, telefone in agenda.items():
+#     print(f"\n Contato: {nome}")
+#     for telefone in telefone:
+#         print(f" - Telefone: {telefone}")
+
+#########################################################################################################################
+
+
+
+
+
+
+                                                                 # 18/09
+
+
+
+
+# peso = float(input("digite seu peso:"))
+# altura = float(input("digite sua altura:"))
+
+# def calcular_imc(peso, altura):
+#     return peso / (altura**2)
+
+# imc = calcular_imc(peso, altura)
+
+# print(f"seu IMC é: {imc:.2f}")
+
+# def novo_imc(imc):
+#     if imc <= 18.5:
+#         return("abaixo do peso")
+#     elif imc <= 24.9:
+#         return("peso normal")
+#     elif imc <= 29.9:
+#         return("sobrepeso")
+#     elif imc <= 39.9:
+#         return("obesidade")
+#     else:
+#         return("obesidade grave")
+    
+
+# print(novo_imc(imc))
+
+
+##################################################################
+
+
+# class pessoa:
+#     def __init__(self, nome, idade):
+#         self.nome = nome
+#         self.idade = idade
+
+#     def apresentar(self):
+#         print(f"meu nome é {self.nome} e eu tenho {self.idade} anos.")
+
+
+#     def fazer_aniversario(self):
+#         self.idade +=1
+
+
+# p1 = pessoa("gabriel", 17)
+# p2 = pessoa("giovani", 17)
+
+# p1.apresentar()
+# p2.apresentar()
+
+# p1.fazer_aniversario()
+# p2.fazer_aniversario()
+
+# p1.apresentar()
+# p2.apresentar()
+
+
+
