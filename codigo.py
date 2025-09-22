@@ -23,4 +23,8 @@ Conta = ContaBancaria("gabriel")
 Conta.depositar (float(input("quanto deseja depositar? R$")))
 Conta.sacar (float(input("quanto deseja sacar? R$")))
 Conta.sacar (float(input("quanto deseja sacar? R$")))
+<<<<<<< HEAD
 Conta.mostrar_saldo()
+=======
+Conta.mostrar_saldo()
+>>>>>>> 43cf478d424837faf9f8732cb4355ce00d281168
