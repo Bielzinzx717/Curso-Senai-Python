@@ -1,30 +1,91 @@
-class ContaBancaria:
-    def __init__(self, titular):
-        self.titular = titular
-        self.saldo = 0
+# class ContaBancaria:
+#     def __init__(self, titular):
+#         self.titular = titular
+#         self.saldo = 0
 
-    def depositar(self, valor):
-        self.saldo += valor
-        print(f"Depósito de R${valor:.2f} realizado com sucesso.")
+#     def depositar(self, valor):
+#         self.saldo += valor
+#         print(f"Depósito de R${valor:.2f} realizado com sucesso.")
 
-    def sacar(self, valor):
-        if valor <= self.saldo:
-            self.saldo -= valor
-            print(f"saque de R${valor:.2f} ralizado com sucesso.")
-        else:
-            print("Saldo insuficiente para saque.")
+#     def sacar(self, valor):
+#         if valor <= self.saldo:
+#             self.saldo -= valor
+#             print(f"saque de R${valor:.2f} ralizado com sucesso.")
+#         else:
+#             print("Saldo insuficiente para saque.")
 
-    def mostrar_saldo(self):
-        print(f"saldo atual de {self.titular}: R${self.saldo:.2f}")
+#     def mostrar_saldo(self):
+#         print(f"saldo atual de {self.titular}: R${self.saldo:.2f}")
 
 
-Conta = ContaBancaria("gabriel")
+# Conta = ContaBancaria("gabriel")
 
-Conta.depositar (float(input("quanto deseja depositar? R$")))
-Conta.sacar (float(input("quanto deseja sacar? R$")))
-Conta.sacar (float(input("quanto deseja sacar? R$")))
-<<<<<<< HEAD
-Conta.mostrar_saldo()
-=======
-Conta.mostrar_saldo()
->>>>>>> 43cf478d424837faf9f8732cb4355ce00d281168
+# Conta.depositar (float(input("quanto deseja depositar? R$")))
+# Conta.sacar (float(input("quanto deseja sacar? R$")))
+# Conta.sacar (float(input("quanto deseja sacar? R$")))
+# Conta.mostrar_saldo()
+
+
+
+# class Vendedor:
+#     def __init__(self, nome, vendas, meta):
+#         self.nome = nome
+#         self.vendas = vendas
+#         self.meta = meta
+
+#     def bateu_meta(self):
+    
+#         if self.vendas >= self.meta:
+#             print("vc bateu a meta")
+            
+#         else:
+#             print("vc nao bateu a meta")
+            
+# v = Vendedor("gabriel", 1000, 1000)
+# v.bateu_meta()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# class Vendedor:
+#     def __init__(self, nome, vendas, meta):
+#         self.nome = nome
+#         self.vendas = vendas
+#         self.meta = meta
+
+#     def bateu_meta(self):
+    
+    
+#         if self.vendas >= self.meta:
+            
+#             return("vc bateu a meta")
+            
+#         else:
+            
+#             return("vc nao bateu a meta")
+            
+# v = Vendedor("gabriel", 1000, 1000)
+# resultado = v.bateu_meta()
+# print(resultado)
+
+
+
+
+
+
+
+
