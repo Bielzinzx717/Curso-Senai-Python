@@ -570,3 +570,15 @@
 
 ######################################################
 
+
+
+
+                                    POO 
+poo em python é um paradigma que modela o mundo real em "objetos", que sao instancias de "classes" (modelos). 
+cada objeto possui atributos (dados) e metodos (comportamentos).
+
+
+encapsulamento : é como guardar os dados dentro de uma caixinha e controlar como eles podem ser usados. 
+em python, usamos getters e setters e modificar atributos de forma segura.
+
+
