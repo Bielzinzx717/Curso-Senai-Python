@@ -582,3 +582,14 @@ encapsulamento : é como guardar os dados dentro de uma caixinha e controlar com
 em python, usamos getters e setters e modificar atributos de forma segura.
 
 
+
+
+
+
+                                30/09
+
+
+abstracao = definir regras gerais -> oq precisa existir
+
+classe concreta = mostrar os detalhes -> comp aquilo funciona.
+
