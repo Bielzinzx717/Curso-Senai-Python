@@ -380,24 +380,107 @@
 
 
 
-from abc import ABC, abstractclassmethod
+# from abc import ABC, abstractclassmethod
 
-class Instrumento(ABC):
-    @abstractclassmethod
-    def tocar(self):
-        pass
+# class Instrumento(ABC):
+#     @abstractclassmethod
+#     def tocar(self):
+#         pass
 
-class Violão(Instrumento):
-    def tocar(self):
-        print("O violão está ticando um som suave de cordas.")
+# class Violão(Instrumento):
+#     def tocar(self):
+#         print("O violão está ticando um som suave de cordas.")
 
 
-class Bateria(Instrumento):
-    def tocar(self):
-        print("a bateria está marcadoo ritimo com batidas fortes")
+# class Bateria(Instrumento):
+#     def tocar(self):
+#         print("a bateria está marcadoo ritimo com batidas fortes")
 
-violao = Violão()
-bater = Bateria()
+# violao = Violão()
+# bater = Bateria()
 
-violao.tocar()
-bater.tocar()
+# violao.tocar()
+# bater.tocar()
+
+
+
+
+##########################################
+
+
+# from abc import ABC, abstractclassmethod
+
+
+# class Funcionario(ABC):
+#     @abstractclassmethod
+#     def calcular_pagamento(self):
+#         pass
+
+
+# class Assalariado(Funcionario):
+#     def __init__(self, salario):
+#         self.salario = salario
+
+
+#     def calcular_pagamento(self):
+#         return self.salario
+    
+
+
+# class Horista(Funcionario):
+#     def __init__ (self, valor_hora, horas_trabalhadas):
+#         self.valor_hora = valor_hora
+#         self.horas_trabalhadas = horas_trabalhadas
+
+#         def calcular_pagamento(self):
+#             return self.valor_hora * self.horas_trabalhadas
+        
+
+
+# f1 = Assalariado(3000)
+# f2 = Horista(50)  #nao completei 
+
+
+
+
+
+
+from viagem_class import viagem_class
+
+viagem_0 = viagem_class("florida")
+viagem_1 = viagem_class("Havai")
+viagem_2 = viagem_class("toquio")
+viagem_3 = viagem_class("egito")
+viagem_4 = viagem_class("londres")
+
+
+print("===================================================="
+      '''
+      ''')
+print("Bem-vindo! Senai viagens tem algumas ofertas para você")
+
+
+viajante = input("Digite seu nome para começarmos: ")
+
+print(f"{viajante} temos 5 destinos que combina com você:"
+'''
+[0] florida
+[1] havai
+[2] toquio
+[3] egito
+[4] londres
+
+''')
+
+selecao = int(input("selecione o numero da viagem desejada: "))
+lista_viagem = [viagem_0, viagem_1, viagem_2, viagem_3,viagem_4]
+
+opcao_selecionada = int(selecao)
+for opcao in lista_viagem:
+    if opcao_selecionada >= 5:
+        print("esta opcao nao esta incluida em nossos destinos.")
+        break
+
+    if opcao_selecionada<= 4:
+        print(f"{viajante} sua viagem para {lista_viagem[opcao_selecionada].destino} esta marcada.")
+        break
