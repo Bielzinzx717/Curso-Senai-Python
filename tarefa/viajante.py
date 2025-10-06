@@ -445,7 +445,7 @@
 
 
 
-from viagem_class import viagem_class
+from tarefa.viagem_class import viagem_class
 
 viagem_0 = viagem_class("florida")
 viagem_1 = viagem_class("Havai")
