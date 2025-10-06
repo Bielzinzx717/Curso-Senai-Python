@@ -51,16 +51,16 @@ class Carrinho:
 
     def adicionar_produto(self, produto):
         self.produtos.append(produto)
-        print(f"✅ Produto '{produto.nome}' adicionado ao carrinho.")
+        print(f" Produto '{produto.nome}' adicionado ao carrinho.")
 
     def calcular_total(self):
         return sum(p.preco for p in self.produtos)
 
     def listar_produtos(self):
         if not self.produtos:
-            print("🛒 O carrinho está vazio.")
+            print(" O carrinho está vazio.")
         else:
-            print("\n📦 Produtos no carrinho:")
+            print("\n Produtos no carrinho:")
             for p in self.produtos:
                 print(f" - {p}")
 
@@ -132,4 +132,5 @@ pedido1.resumo_pedido()
 
 print("\n--- Apresentações ---")
 print(cliente1.apresentar())
+
 print(funcionario1.apresentar())
