@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 from abc import ABC, abstractmethod
 from enum import Enum
 
@@ -135,7 +134,6 @@ print("\n--- Apresentações ---")
 print(cliente1.apresentar())
 
 print(funcionario1.apresentar())
-=======
 from abc import ABC, abstractmethod
 from enum import Enum
 
@@ -272,4 +270,3 @@ print("\n--- Apresentações ---")
 print(cliente1.apresentar())
 
 print(funcionario1.apresentar())
->>>>>>> 0198a4a0eaaa5ab29747a45590b8d3cf40b4138a
