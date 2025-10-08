@@ -593,3 +593,24 @@ abstracao = definir regras gerais -> oq precisa existir
 
 classe concreta = mostrar os detalhes -> comp aquilo funciona.
 
+
+#################################################
+
+
+                                07/10
+
+
+metodos HTTP - POST 
+
+
+
+metodo HTTP - PUT 
+substitui.
+
+Idempotente
+
+
+metodo HTTP - PATCH
+
+metodo HTTP - OPTIONS
+

@@ -52,19 +52,40 @@
 
 
 
-import pyautogui
-import time
+# import pyautogui
+# import time
 
-pyautogui.PAUSE = 1
-pyautogui.FAILSAFE =True
+# pyautogui.PAUSE = 1
+# pyautogui.FAILSAFE =True
 
-pyautogui.press('win')
-pyautogui.write('chrome')
-pyautogui.press('enter')
+# pyautogui.press('win')
+# pyautogui.write('chrome')
+# pyautogui.press('enter')
 
 
-pyautogui.click(x=679, y=418)
+# pyautogui.click(x=679, y=418)
 
-pyautogui.click(x=298, y=59)
-pyautogui.write('https://capitalapex.com.br')
-pyautogui.press('enter')
+# pyautogui.click(x=298, y=59)
+# pyautogui.write('https://capitalapex.com.br')
+# pyautogui.press('enter')
+
+
+
+
+
+import requests
+
+
+url = "https://jsonplaceholder.typicode.con/posts"
+
+
+novo_post = {
+    "title": "meu primeiro post via python" , 
+    "body": "estou aprendendo sobre HTTP" ,
+    "userld": 1
+}
+
+
+resposta = requests.post(url, json=novo_post)
+print("status code:", resposta.status_code)
+print("corpo da resposta:", resposta.json())
