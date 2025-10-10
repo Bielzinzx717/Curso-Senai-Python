@@ -147,3 +147,108 @@
 
 
 
+############################################################################################
+
+
+
+
+
+
+
+# import json
+
+# texto = '{"curso": "backend", "modulo": "HTTP"}'
+# dados = json.loads(texto)
+# print(dados["curso"])
+
+
+# novo_json = json.dumps(dados, indent=2)
+# print(novo_json)
+
+
+
+# import requests
+
+
+# url = "https://httpbin.org/bearer"
+
+
+# token = "abcd1234"
+
+
+# Headers = {
+#     "Authorization":  f"Bearer {token}"
+# }
+
+
+# resposta = requests.get(url, headers=Headers)
+
+
+# print("Status Code:", resposta.status_code)
+# print("Corpo da resposta:, resposta.text")
+# print(resposta.json())
+
+
+
+
+
+
+# import requests
+
+# url = "https://httpbin.org/bearer"
+# token = "abcd1234"
+
+# headers = {
+#     "Authorization": f"Bearer {token}"
+# }
+
+                                                                    #chat gpt
+# resposta = requests.get(url, headers=headers)
+
+# print("Status Code:", resposta.status_code)
+# print("Corpo da resposta:", resposta.text)
+
+# try:
+#     print("JSON:", resposta.json())
+# except ValueError:
+#     print("Erro: a resposta não está em formato JSON válido.")
+
+
+
+
+
+from flask import Flask
+import os
+
+app = Flask(__name__)
+@app.route("/")
+def home():
+    soma = 30 + 57
+    mult = 15 * 7
+    div = 25 / 4
+    resto = 37 % 5
+    potencia = 6 ** 4
+
+    resposta = f"""
+    <h1> Operadores Aritmeticos<h1>
+    <ul>
+        <li> 1. calcule a soma de 30 + 57: {soma}</li>
+        <li> 2. multiplique 15 por 7: {mult}</li>
+        <li> 3. divida 25 por 4 e veja o resultado: {div}</li>
+        <li> 4. descubra o resto da divisao de 37 por 5: {resto}</li>
+        <li> 5. ele 6 a potencia de 4: {potencia}</li>
+
+    </ul>
+    """
+
+    return resposta
+
+if __name__ == "__main__":
+    app.run(debug=True)
+
+
+
+
+
+
+
