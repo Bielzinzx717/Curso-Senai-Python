@@ -1,7 +1,16 @@
 *{
-    background-color: #1500ff;
+    background-color: #000000;
 }
 h1{
     text-align: center;
-    color: #000000;
+    color: #ff0000;
+}
+p{
+    color: aliceblue;
+}
+ul{
+    color: aliceblue;
+}
+li{
+    color: aliceblue;
 }
