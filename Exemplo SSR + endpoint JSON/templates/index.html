@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% import "_components.html" as C %}
+{% block title %}Minhas Tarefas{% endblock %}
+{% block content %}
+  {{ C.Alert("info", "Arquitetura Híbrida", "Esta página é SSR, mas temos uma API em /api/tarefas.") }}
+  <div class="spacer"></div>
+  <div class="row">
+    {{ C.Button("Ver API JSON", "/api/tarefas") }}
+    {{ C.Button("Nova Tarefa", "#", "primary") }}
+  </div>
+  <div class="spacer"></div>
+  <section class="grid">
+    {% for t in tarefas %}
+      {{ C.CardTask(t.titulo, t.descricao, t.concluida) }}
+    {% endfor %}
+  </section>
+{% endblock %}

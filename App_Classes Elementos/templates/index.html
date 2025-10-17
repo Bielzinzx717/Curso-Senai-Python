@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% import "_components.html" as C %}
+
+{% block title %}Minhas Tarefas{% endblock %}
+
+{% block content %}
+  {{ C.Alert("success", "Modelagem pronta!", "Agora estamos exibindo as tarefas em cards reutilizáveis.") }}
+  <div class="spacer"></div>
+
+  <form action="{{ url_for('add') }}" method="POST" style="margin-bottom: 20px;">
+  <input type="text" name="titulo" placeholder="Título da tarefa" required style="padding:10px; width: 100%; margin-bottom: 8px; border-radius: 8px; border:1px solid var(--border);">
+  <textarea name="descricao" placeholder="Descrição (opcional)" style="padding:10px; width: 100%; margin-bottom: 8px; border-radius: 8px; border:1px solid var(--border);"></textarea>
+  <button type="submit" class="btn primary">➕ Adicionar Tarefa</button>
+  </form>
+
+
+  <div class="row">
+    <a class="btn primary" href="#">➕ Nova Tarefa</a>
+    <a class="btn" href="#">📦 Exportar</a>
+  </div>
+
+  <div class="spacer"></div>
+  <section class="grid">
+    {% for t in tarefas %}
+      {{ C.CardTask(t.id, t.titulo, t.descricao, t.concluida) }}
+    {% endfor %}
+  </section>
+{% endblock %}

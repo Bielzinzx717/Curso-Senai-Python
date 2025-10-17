@@ -1,0 +1,37 @@
+{% macro Badge(status) -%}
+  {%- if status -%}
+    <span class="badge ok">✅ Concluída</span>
+  {%- else -%}
+    <span class="badge pending">⏳ Pendente</span>
+  {%- endif -%}
+{%- endmacro %}
+
+{% macro CardTask(titulo, descricao, concluida=False) -%}
+  <article class="card">
+    <h3 class="title">{{ titulo }}</h3>
+    {% if descricao %}
+      <p class="muted">{{ descricao }}</p>
+    {% endif %}
+    <div class="spacer"></div>
+    <div class="row">
+      {{ Badge(concluida) }}
+      <a class="btn" href="#">✏️ Editar</a>
+      <a class="btn primary" href="#">✔️ Marcar</a>
+    </div>
+  </article>
+{%- endmacro %}
+
+{% macro Alert(kind="info", title="", message="") -%}
+  {%- set palette = {
+    "info":   {"emoji":"ℹ️","bg":"#eff6ff","bd":"#bfdbfe","fg":"#1e3a8a"},
+    "warn":   {"emoji":"⚠️","bg":"#fffbeb","bd":"#fde68a","fg":"#78350f"},
+    "danger": {"emoji":"⛔","bg":"#fef2f2","bd":"#fecaca","fg":"#7f1d1d"},
+    "success":{"emoji":"✅","bg":"#ecfdf5","bd":"#bbf7d0","fg":"#064e3b"}
+  } -%}
+  {%- set p = palette.get(kind, palette["info"]) -%}
+  <div style="background:{{p.bg}};border:1px solid {{p.bd}};color:{{p.fg}};padding:12px 14px;border-radius:12px;">
+    <strong>{{p.emoji}} {{ title }}</strong>
+    <div class="muted" style="color:inherit;">{{ message }}</div>
+  </div>
+{%- endmacro %}
+
